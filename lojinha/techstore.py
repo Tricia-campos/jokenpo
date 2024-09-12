@@ -1,17 +1,16 @@
 
-notbook = ["macbook air", "galaxy book4", "asus vivobook"]
+notbook = ["macbook air ", "galaxy book4", "asus vivobook"]
 valornb =["6300.00", "2768.67","2769.89"]
 smartfones = ["iphone 15 pro max", "S23 ultra","moto edge 40" ]
 valorsf =["9967.89", "4200.78", "4090.76"]
 fone = ["airpods pro 3", "galaxy buds fe", "jbl"]
 valorf =["1400.90","469.89","290.60"]
 
-def inicio():
-    
-    print("TECHSTORE")
+  
+print("TECHSTORE")
 cliente = input("Bem vindo a techstore, deseja conhecer nossas promoções? (sim/nao): ")
 if cliente == "sim":
-    print ("""   --------------------------------------------------------------
+  print ("""   --------------------------------------------------------------
         | confira nossas promoções do dia:                           |
         |NOTBOOKS -> macbook air de 6999.90R$ por 6300.00R$          |
         |            galaxy book4 de 3999.90R$ por 2768.67R$         |
@@ -24,13 +23,53 @@ if cliente == "sim":
         |            JBL de 299.90R$ por 290.60R$                    |
         --------------------------------------------------------------""")                
 else:
-    print("Até a proxima!")
-    
+    print("até a proxima! ")   
 
-print(f""" Escolha uma opção:
+
+comprar = input(f"""Qual produto você deseja comprar? 
+      Escolha uma opção:
       1.notbooks
       2. smartfones
-      3. fone de ouvido""")
-comprar = input("Qual produto você deseja comprar? ")
+      3. fone de ouvido: """)
+      
 
 
+if comprar == "1":
+    print(notbook)
+    produto1 = input("Qual produto dessa categoria vc deseja? (1/2/3): ")
+    if produto1 == "1":
+        print(f""" NOTA:
+          O valor a ser pago é 6.300.00R$""")
+    elif produto1 == "2":
+        print(f""" NOTA:
+          O valor a ser pago é 2768.67R$""")
+    elif produto1 == "3":
+        print(f""" NOTA:
+          O valor a ser pago é 2769.89R$""")
+   
+
+if comprar == "2":
+    print(smartfones,valorsf)
+    produto2 = input("Qual produto dessa categoria vc deseja? (1/2/3): ")
+    if produto2 == "1":
+        print(f""" NOTA:
+          O valor a ser pago é 9.967.89R$""")
+    elif produto2 == "2":
+        print(f""" NOTA:
+          O valor a ser pago é 4.200.78R$""")
+    elif produto2 == "2":
+        print(f""" NOTA:
+          O valor a ser pago é 4.090.76R$""")
+
+if comprar == "3":
+    print(fone,valorf)
+    produto3 = input("Qual produto dessa categoria vc deseja? (1/2/3): ")
+    if produto3 == "1":
+        print(f""" NOTA:
+          O valor a ser pago é 1.400.90R$""")
+    elif produto3 == "2":
+        print(f""" NOTA:
+          O valor a ser pago é 469.89R$""")
+    elif produto3 == "2":
+        print(f""" NOTA:
+          O valor a ser pago é 290.60R$""")
