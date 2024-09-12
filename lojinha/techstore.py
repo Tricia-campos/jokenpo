@@ -39,13 +39,13 @@ if comprar == "1":
     produto1 = input("Qual produto dessa categoria vc deseja? (1/2/3): ")
     if produto1 == "1":
         print(f""" NOTA:
-          O valor a ser pago é 6.300.00R$""")
+          O valor a ser pago é {valornb[0]}R$ """)
     elif produto1 == "2":
         print(f""" NOTA:
-          O valor a ser pago é 2768.67R$""")
+          O valor a ser pago é {valornb[1]}R$ """)
     elif produto1 == "3":
         print(f""" NOTA:
-          O valor a ser pago é 2769.89R$""")
+          O valor a ser pago é {valornb[2]}R$ """)
    
 
 if comprar == "2":
@@ -53,23 +53,23 @@ if comprar == "2":
     produto2 = input("Qual produto dessa categoria vc deseja? (1/2/3): ")
     if produto2 == "1":
         print(f""" NOTA:
-          O valor a ser pago é 9.967.89R$""")
+          O valor a ser pago é {valorsf[0]}R$ """)
     elif produto2 == "2":
         print(f""" NOTA:
-          O valor a ser pago é 4.200.78R$""")
-    elif produto2 == "2":
+          O valor a ser pago é {valorsf[1]}R$ """)
+    elif produto2 == "3":
         print(f""" NOTA:
-          O valor a ser pago é 4.090.76R$""")
+          O valor a ser pago é {valorsf[2]}R$ """)
 
 if comprar == "3":
     print(fone,valorf)
     produto3 = input("Qual produto dessa categoria vc deseja? (1/2/3): ")
     if produto3 == "1":
         print(f""" NOTA:
-          O valor a ser pago é 1.400.90R$""")
+          O valor a ser pago é {valorf[0]}R$ """)
     elif produto3 == "2":
         print(f""" NOTA:
-          O valor a ser pago é 469.89R$""")
-    elif produto3 == "2":
+          O valor a ser pago é {valorf[1]}R$ """)
+    elif produto3 == "3":
         print(f""" NOTA:
-          O valor a ser pago é 290.60R$""")
+          O valor a ser pago é {valorf[2]}R$ """)
